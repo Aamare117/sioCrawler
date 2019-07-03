@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindMe.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="Nunito-Bold">
+                <On Platform="iOS"
+                    Value="Nunito-Bold" />
+                </OnPlatform>
+
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="Nunito-Regular">
+                <On Platform="iOS"
+                    Value="Nunito-Regular" />
+                </OnPlatform>
+
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="Nunito-Light">
+                <On Platform="iOS"
+                    Value="Nunito-Light" />
+            </OnPlatform>
+
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="Quicksand-Light">
+                <On Platform="iOS"
+                    Value="Quicksand-Light" />
+            </OnPlatform>
+
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="Quicksand-Regular">
+                <On Platform="iOS"
+                    Value="Quicksand-Regular" />
+                </OnPlatform>
+
+             <OnPlatform x:TypeArguments="x:String"
+                        x:Key="Quicksand-Medium">
+                <On Platform="iOS"
+                    Value="Quicksand-Medium" />
+                </OnPlatform>
+
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="Quicksand-Bold">
+                <On Platform="iOS"
+                    Value="Quicksand-Bold" />
+                </OnPlatform>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

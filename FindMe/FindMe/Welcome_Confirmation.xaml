@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+    x:Class="FindMe.Welcome_Confirmation"
+    BackgroundColor="#6BDAED">
+
+    <ContentPage.Content>
+        <StackLayout>
+             <forms:AnimationView x:Name="AnimationView"
+                         Animation="loader.json"
+                         Loop="True"
+                         AutoPlay="True"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         WidthRequest="120.797607421875"
+                         HeightRequest="170.8865966796875"
+                         Margin="0,121,0,0"/>
+
+            <Image
+                Source="handbuttonchecked"
+                WidthRequest="80.797607421875"
+                HeightRequest="130.8865966796875"
+                Margin="0,121,0,0"
+                x:Name="successConnectedImage"
+                IsVisible="false">
+            </Image>
+
+            
+
+            <Label Text="Non connecté"
+                   FontFamily="{StaticResource Quicksand-Regular}"
+                   FontSize="25"
+                   x:Name="labelStatus"
+                   FontAttributes="None"
+                   TextColor="#FFF"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,61,0,0">
+                
+            </Label>
+
+            <Label Text="Votre Find Me n'est pas detecté."
+                   FontFamily="{StaticResource Nunito-Regular}"
+                   FontSize="14"
+                   x:Name="labelStatusDescription"
+                   FontAttributes="None"
+                   IsVisible="true"
+                   TextColor="#FFF"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Margin="0,20,0,0">
+                
+            </Label>
+
+           
+
+            <Button Text="Relancer"
+                    FontFamily="{StaticResource Nunito-Bold}"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    TextColor="#5A5A5A"
+                    IsVisible="false"
+                    x:Name="buttonRetry"
+                    Clicked="RelancerButtonClique"
+                    WidthRequest="300"
+                    HeightRequest="40"
+                    BackgroundColor="#FFF"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"
+                    Margin="0,80,0,0">
+                
+            </Button>
+
+            <Button Text="Démarrer"
+                    FontFamily="{StaticResource Nunito-Bold}"
+                    FontSize="14"
+                    x:Name="buttonStart"
+                    FontAttributes="Bold"
+                    TextColor="#5A5A5A"
+                    Clicked="ConnectionButtonClique"
+                    IsEnabled="False"
+                    WidthRequest="300"
+                    HeightRequest="40"
+                    BackgroundColor="#FFF"
+                    CornerRadius="20"
+                    IsVisible="true"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0">
+                
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FindMe.Localisation"
+    Title="Localisation"
+    IconImageSource="placeholder.png"
+    WidthRequest="18"
+    HeightRequest="20"
+    BackgroundImage="homebackgroundpath.png">
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Localisation"
+                   FontFamily="{StaticResource Quicksand-Bold}"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#5A5A5A"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,35,0,0">
+            </Label>
+
+            <Frame WidthRequest="240"
+                   HeightRequest="247.044189453125"
+                   HasShadow="true"
+                   BackgroundColor="#FFF"
+                   CornerRadius="5"
+                   Margin="68,70,67,0">
+
+                <StackLayout Spacing="0"
+                             Margin="0"
+                             VerticalOptions="FillAndExpand"
+                             HorizontalOptions="FillAndExpand">
+
+                    <Image Margin="30,30,30,40"
+                           Source="northeastCompass"
+                           WidthRequest="180"
+                           x:Name="statusImage"
+                           HeightRequest="134"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center" />
+
+                    <Label Text="Inconnu"
+                           FontFamily="{StaticResource Quicksand-Regular}"
+                           FontSize="25"
+                           FontAttributes="None"
+                           x:Name="statusLabel"
+                           TextColor="#5A5A5A"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                    </Label>
+
+                </StackLayout>
+            </Frame>
+
+            <Button Text="Alerter mon Find Me"
+                    FontFamily="{StaticResource Nunito-Bold}"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    TextColor="#5A5A5A"
+                    Clicked="AlerterClique"
+                    WidthRequest="287"
+                    HeightRequest="36"
+                    BackgroundColor="#FFF"
+                    CornerRadius="18"
+                    HorizontalOptions="Center"
+                    Margin="0,54,0,0"
+                    x:Name="BoutonAlerter"
+                    BorderWidth="1"
+                    BorderColor="#FFF">
+            </Button>
+           
+            <Button Text="Démarrer la localisation"
+                    FontFamily="{StaticResource Nunito-Bold}"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    TextColor="#5A5A5A"
+                    Clicked="ButtonStartLocationClicked"
+                    WidthRequest="287"
+                    HeightRequest="36"
+                    BackgroundColor="#FFF"
+                    CornerRadius="18"
+                    HorizontalOptions="Center"
+                    Margin="0,49,0,30"
+                    x:Name="buttonStartLocation"
+                    BorderWidth="1"
+                    BorderColor="#FFF">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

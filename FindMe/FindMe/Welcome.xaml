@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindMe.Welcome"
+             xmlns:local="clr-namespace:FindMe.Templates"
+             xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             BackgroundImage="homebackgroundpath.png">
+
+    <StackLayout>
+
+        <Image  Margin="0,40,0,0"
+                Source="location.png"
+                WidthRequest="35.67431640625"
+                HeightRequest="40.00091552734375"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+        <Label Text="Bienvenue"
+               Margin="0,21,0,0"
+               FontFamily="{StaticResource Quicksand-Regular}"
+               FontSize="25"
+               FontAttributes="None"
+               TextColor="#DCDCDC"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center">
+           
+        </Label>
+
+        <Label Text="Find Me"
+               Margin="0"
+               FontFamily="{StaticResource Quicksand-Bold}"
+               FontSize="40"
+               FontAttributes="Bold"
+               TextColor="#646BEB"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center">
+        </Label>
+
+        <controls:CarouselViewControl Orientation="Horizontal"
+                                      InterPageSpacing="0"
+                                      x:Name="Carousel"
+                                      VerticalOptions="FillAndExpand"
+                                      HorizontalOptions="FillAndExpand"
+                                      ShowIndicators="True"
+                                      IndicatorsTintColor="#FFF"
+                                      CurrentPageIndicatorTintColor="#646BEB"
+                                      IndicatorsShape="Circle">
+            <controls:CarouselViewControl.ItemTemplate>
+                <DataTemplate>
+                    <local:CarouselView />
+                </DataTemplate>
+            </controls:CarouselViewControl.ItemTemplate>
+        </controls:CarouselViewControl>
+    </StackLayout>
+</ContentPage>

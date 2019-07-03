@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FindMe.Templates.CarouselView">
+    <ContentView.Content>
+        <StackLayout>
+
+            <Grid>
+                <Frame WidthRequest="240"
+                       HeightRequest="280"
+                       HasShadow="true"
+                       BackgroundColor="#FFF"
+                       CornerRadius="5"
+                       Margin="68,20,67,0">
+
+                    <StackLayout WidthRequest="240"
+                                 HeightRequest="280"
+                                 BackgroundColor="#FFF">
+
+                        <Image Source="{Binding ImageSource}"
+                               WidthRequest="92.04473876953125"
+                               HeightRequest="99.10211181640625"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               Margin="0" />
+
+                        <Label Text="{Binding LabelFrame}"
+                               FontFamily="{StaticResource Nunito-Regular}"
+                               FontSize="14"
+                               FontAttributes="None"
+                               TextColor="#5A5A5A"
+                               Margin="16,43,11,19"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center">
+                            
+                        </Label>
+
+                    </StackLayout>
+                </Frame>
+
+            </Grid>
+
+          
+            <Button   Command="{Binding CommandeBouton}"
+                      Text="{Binding ButtonText}"
+                      FontSize="14" 
+                      FontAttributes="Bold"
+                      TextColor="#FFF"
+                      Margin="0,0,0,0"
+                      FontFamily="{StaticResource Nunito-Bold}">
+               
+            </Button>
+
+
+
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
